@@ -11,11 +11,11 @@ inline fun inlineFunction2(myFun: () -> Unit, nxtFun: () -> Unit) {
     print("code inside inline function2")
 }
 
-inline fun inlineFunction3(crossline myFun: () -> Unit, nxtFun: () -> Unit) {
+/*inline fun inlineFunction3(crossline myFun: () -> Unit, nxtFun: () -> Unit) {
     myFun()
     nxtFun()
     print("code inside inline function")
-}
+}*/
 
 inline fun inlineFunctionExample4(myFun: () -> Unit, noinline nxtFun: () -> Unit  ) {
     myFun()
@@ -25,7 +25,7 @@ inline fun inlineFunctionExample4(myFun: () -> Unit, noinline nxtFun: () -> Unit
 
 
 fun main(args: Array<String>) {
-    inlineFunction({ println("calling inline functions") })
+    /*inlineFunction({ println("calling inline functions") })
 
     inlineFunction2({
         println("calling inline functions2")
@@ -39,6 +39,6 @@ fun main(args: Array<String>) {
     inlineFunctionExample4({  println("calling inline functions")},
         {  println("next parameter in inline functions")} )
 
-    println("this is main function closing")
+    println("this is main function closing")*/
 
 }
